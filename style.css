@@ -1,0 +1,170 @@
+body{
+    background: black;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: auto;
+   
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+nav ul{
+    display: flex;
+    
+}
+
+nav ul li{
+    
+    list-style: none;
+    margin: 0 2px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background: black;
+    padding: 10px;
+    font-size: 14px;
+    transition: all 0.2s ease-in;
+}
+
+nav a:hover{
+    background: #131313;
+}
+
+nav a:active, nav a:focus{
+    background: none;
+    border: 1px solid black;
+}
+
+nav button{
+    border-radius:  0% 30%;
+}
+nav button{
+    background: white;
+    border: none;
+    margin: 0 4%;
+}
+nav button:hover{
+    background: red;
+}
+
+.home-section{
+    background: url('https://m.media-amazon.com/images/I/51FySas-G7L._SL1000_.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    
+}
+.home-ctr{
+    background: rgb(68, 62, 62, 0.4);
+    height: 100vh;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0.1;
+}
+
+.home-ctr h1{
+    font-size: 10vw;
+    color: white;
+
+}
+
+.home-ctr p{
+    color: green;
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+.about-ctr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-wrap: nowrap;
+    height: auto;
+    width: auto;
+    padding: 10px 20px;
+}
+
+.about-ctr .image{
+    background: url('https://image.winudf.com/v2/image/Y29tLmhhY2tlci53YWxscGFwZXIuSGFja2VyV2FsbHBhcGVyNEtfc2NyZWVuXzBfMTUzMzAzMDgxMl8wNTM/screen-0.jpg?fakeurl=1&type=.jpg');
+    height: auto;
+    width: auto;
+    padding: 130px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.about-ctr .heading{
+    border: 1px solid red;
+    margin-left: 17px;
+    padding: 20px;
+
+}
+
+footer{
+    background: #131313;
+    color: red;
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 30px 20px;
+    font-size: 17px;
+
+}
+
+span{
+    color: white;
+    border-bottom: 1px solid green;
+}
+
+@media screen and (max-width: 540px){
+
+    nav ul{
+        margin-right: 40px;
+    }
+    .home-ctr h1{
+        font-size: 14vw;
+        color: white;
+    
+    }
+    
+    .home-ctr p{
+        color: green;
+        font-size: 19px;
+        margin-top: -10px;
+    }
+
+    .about-ctr{
+        flex-wrap: wrap;
+    }
+
+    .about-ctr .image{
+        padding: 140px;
+    }
+
+    .about-ctr .heading{
+        margin-top: 16px;
+    }
+}
